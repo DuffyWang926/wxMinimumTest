@@ -1,0 +1,98 @@
+{
+    "case_name": "test_get_search_info",
+    "run_time": "20200727 16:16:20",
+    "test_type": "FirstTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py\", line 60, in testPartExecutor\n    yield\n  File \"/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py\", line 676, in run\n    self._callTestMethod(testMethod)\n  File \"/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/unittest/case.py\", line 633, in _callTestMethod\n    method()\n  File \"/Users/wangenfei/Desktop/workplace/weChat/wxTest/mimitest/pythonTest/first_test.py\", line 14, in test_get_search_info\n    assertEqual(path,'/pages/searchpage/searchpage')\nNameError: name 'assertEqual' is not defined\n",
+    "start_timestamp": 1595837780.240237,
+    "is_failure": false,
+    "is_error": true,
+    "module": ".Users.wangenfei.Desktop.workplace.weChat.wxTest.mimitest.pythonTest.first_test",
+    "package": "first_test",
+    "failed_line_num": 14,
+    "device": {
+        "system_info": {
+            "model": "iPhone 5",
+            "pixelRatio": 2,
+            "windowWidth": 320,
+            "windowHeight": 456,
+            "system": "iOS 10.0.1",
+            "language": "zh_CN",
+            "version": "7.0.4",
+            "screenWidth": 320,
+            "screenHeight": 568,
+            "SDKVersion": "2.11.3",
+            "brand": "devtools",
+            "fontSizeSetting": 16,
+            "benchmarkLevel": 1,
+            "batteryLevel": 69,
+            "statusBarHeight": 20,
+            "safeArea": {
+                "right": 320,
+                "bottom": 568,
+                "left": 0,
+                "top": 20,
+                "width": 320,
+                "height": 548
+            },
+            "deviceOrientation": "portrait",
+            "platform": "devtools",
+            "devicePixelRatio": 2
+        }
+    },
+    "log_filename": "test_get_search_info.log",
+    "weapp_log_path": "weapp.log",
+    "page_data": {
+        "hotlist": [
+            {
+                "name": "\u9762\u819c",
+                "id": 3
+            },
+            {
+                "name": "\u6d88\u6bd2",
+                "id": 2
+            },
+            {
+                "name": "\u56fa\u4f73\u4e50",
+                "id": 1
+            }
+        ],
+        "storgelist": [],
+        "key": "save_array",
+        "save_data": "",
+        "arry_data": []
+    },
+    "source": {
+        "code": [
+            "    def test_get_search_info(self):\n",
+            "        self.page.get_element(\"input[class='serinput']\").click()\n",
+            "        time.sleep(1)\n",
+            "        path = self.page.path\n",
+            "        assertEqual(path,'/pages/searchpage/searchpage')\n",
+            "        print(path,'path')\n"
+        ],
+        "start": 10
+    },
+    "stop_timestamp": 1595837785.586827,
+    "check_list": [],
+    "assert_list": [],
+    "screen_info": [
+        {
+            "name": "setup",
+            "url": "/pages/index/index",
+            "path": "images/161622972725.png",
+            "ts": 1595837783.261338,
+            "datetime": "2020-07-27 16:16:23"
+        },
+        {
+            "name": "teardown",
+            "url": "/pages/searchpage/searchpage",
+            "path": "images/161625397622.png",
+            "ts": 1595837785.5660641,
+            "datetime": "2020-07-27 16:16:25"
+        }
+    ],
+    "filename": "test_get_search_info.json"
+}

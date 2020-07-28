@@ -1,0 +1,27 @@
+DEBUG 2020-06-19 14:16:53,333 loader.py  load_from_module 66  [35m[35mLoading module: first_test[0m[0m
+DEBUG 2020-06-19 14:16:53,335 loader.py  load_from_module 70  [35m[35mput module[first_test] into queue[0m[0m
+INFO  2020-06-19 14:16:53,364 loader.py  main            173 [32m[32mstart session with fork mode 
+{'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': False, 'assert_capture': True, 'auto_relaunch': True, 'device_desire': {}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 180, 'request_timeout': 30, 'use_push': True, 'full_reset': False, 'outputs': None, 'enable_app_log': True, 'project_path': None, 'dev_tool_path': None, 'test_port': 9420, 'is_default_config': True}
+[0m[0m
+DEBUG 2020-06-19 14:16:54,125 minitest.py setUpClass      57  [35m[35m=====================[0m[0m
+DEBUG 2020-06-19 14:16:54,125 minitest.py setUpClass      58  [35m[35mTesting class：FirstTest[0m[0m
+DEBUG 2020-06-19 14:16:54,125 minitest.py setUpClass      59  [35m[35m=====================[0m[0m
+INFO  2020-06-19 14:16:54,125 wx_minium.py __init__        42  {}
+WARNI 2020-06-19 14:16:54,138 wx_minium.py __init__        60  [33m[33mDev tool doesn't support current OS yet[0m[0m
+INFO  2020-06-19 14:16:54,139 wx_minium.py launch_dev_tool 75  [32m[32mStarting dev tool and launch MiniProgram project ...[0m[0m
+WARNI 2020-06-19 14:16:54,139 wx_minium.py launch_dev_tool 112 [33m[33mCan not find project_path in config, that means you must open dev tool by automation way first[0m[0m
+INFO  2020-06-19 14:16:54,139 wx_minium.py connect_dev_tool 135 [32m[32mTrying to connect Dev tool ...[0m[0m
+ERROR 2020-06-19 14:16:54,184 _logging.py error           60  [31m[31merror from callback <bound method Connection._on_error of <minium.miniprogram.base_driver.connection.Connection object at 0x7fda1fbe3160>>: [Errno 61] Connection refused[0m[0m
+INFO  2020-06-19 14:16:54,237 connection.py _ws_run_forever 89  [32m[32mwebsocket run forever shutdown[0m[0m
+ERROR 2020-06-19 14:17:28,668 wx_minium.py connect_dev_tool 140 connect to server timeout: ws://localhost:9420, thread:False
+INFO  2020-06-19 14:17:28,674 wx_minium.py connect_dev_tool 135 [32m[32mTrying to connect Dev tool ...[0m[0m
+ERROR 2020-06-19 14:17:28,723 _logging.py error           60  [31m[31merror from callback <bound method Connection._on_error of <minium.miniprogram.base_driver.connection.Connection object at 0x7fda1fbe33d0>>: [Errno 61] Connection refused[0m[0m
+INFO  2020-06-19 14:17:28,740 connection.py _ws_run_forever 89  [32m[32mwebsocket run forever shutdown[0m[0m
+ERROR 2020-06-19 14:17:58,677 wx_minium.py connect_dev_tool 140 connect to server timeout: ws://localhost:9420, thread:False
+INFO  2020-06-19 14:17:58,677 wx_minium.py connect_dev_tool 135 [32m[32mTrying to connect Dev tool ...[0m[0m
+ERROR 2020-06-19 14:17:58,712 _logging.py error           60  [31m[31merror from callback <bound method Connection._on_error of <minium.miniprogram.base_driver.connection.Connection object at 0x7fda1fbe3a30>>: [Errno 61] Connection refused[0m[0m
+INFO  2020-06-19 14:17:58,730 connection.py _ws_run_forever 89  [32m[32mwebsocket run forever shutdown[0m[0m
+ERROR 2020-06-19 14:18:33,195 wx_minium.py connect_dev_tool 140 connect to server timeout: ws://localhost:9420, thread:False
+WARNI 2020-06-19 14:18:33,204 wx_minium.py launch_dev_tool 118 [33m[33mPlease ensure your local address like 127.0.0.1 or localhost is not pass by proxy[0m[0m
+WARNI 2020-06-19 14:18:33,204 wx_minium.py launch_dev_tool 119 [33m[33mPlease ensure the version of base lib in dev tool is upper than 2.7.5[0m[0m
+WARNI 2020-06-19 14:18:33,204 wx_minium.py launch_dev_tool 120 [33m[33mTry to set a bigger number into request_time in config[0m[0m
