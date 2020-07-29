@@ -2,14 +2,15 @@
 import minium
 import time
 
-class FirstTest(minium.MiniTest):
-    # def test_get_system_info(self):
-    #     sys_info = self.app.call_wx_method("getSystemInfo")
-    #     self.assertIn("SDKVersion", sys_info.result.result)
-    
-    def test_get_search_info(self):
-        self.page.get_element("input[class='serinput']").click()
+class SearchTest(minium.MiniTest):
+        
+    def test_search_page_info(self):
+        self.app.navigate_to("/pages/searchpage/searchpage")
+        time.sleep(1)
+        self.page.data = {'save_data':'面膜'}
+        topNode = self.page.get_element("view[class='sousuo']")
+        topNode.click()
         time.sleep(1)
         path = self.page.path
-        self.assertEqual(path,'/pages/searchpage/searchpage')
+        self.assertEqual(path,'/shoppages/shop/shop')
         print(path,'path')

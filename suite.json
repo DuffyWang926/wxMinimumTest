@@ -1,0 +1,17 @@
+{
+    "pkg_list": [
+        {
+            "pkg": "searchTest.search_test",
+            "case_list": [
+              "test_search_page_info",
+            ]
+          },
+        {
+            "pkg": "first_test",
+            "case_list": [
+            "test1_get_search_info",
+            "test2_banner_info"
+            ]
+        }
+    ]
+}
